@@ -2,7 +2,7 @@ const http = require("http");
 const app = require("./app.js");
 const connectDB = require("./config/db.js");
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const startServer = async () => {
   try {

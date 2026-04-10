@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGO_URI = "mongodb+srv://ahmed68aad_db_user:2yBaJZYeGO5OuRQa@buildify-dev.jecbjhh.mongodb.net/Tasks-man?retryWrites=true&w=majority";
+const MONGO_URI = process.env.MONGO_URI;
 
 const connectDB = async () => {
   try {
